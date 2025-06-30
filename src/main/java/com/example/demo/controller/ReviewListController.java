@@ -25,7 +25,7 @@ public class ReviewListController {
 		List<Review> list = service.findByRestaurantId(form.getRestaurantId());
 		
 		if (list.size() > 0) {
-			model.addAttribute("review-list", list);
+			model.addAttribute("reviewList", list);
 		}
 		
 		return "review-list";
